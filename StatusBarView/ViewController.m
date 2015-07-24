@@ -7,21 +7,29 @@
 //
 
 #import "ViewController.h"
+#import "StatusMessage.h"
+#import "MessageView.h"
 
 @interface ViewController ()
+
+@property(nonatomic,strong) UIWindow *statusWindow;
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self performSelector:@selector(showMessageEvent) withObject:nil afterDelay:5.f];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)showMessageEvent {
+
+    [StatusMessage showAndHideDuration:2.f];
+    [StatusMessage showWithView:[MessageView messageViewWithTitle:@"YouXianMing" backgroundColor:[UIColor whiteColor]]
+               hideAfterSeconds:3.f];
 }
 
 @end
