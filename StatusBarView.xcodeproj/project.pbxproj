@@ -14,7 +14,7 @@
 		10C486791B62653C0065DC85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C486781B62653C0065DC85 /* Images.xcassets */; };
 		10C4867C1B62653C0065DC85 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10C4867A1B62653C0065DC85 /* LaunchScreen.xib */; };
 		10C486881B62653C0065DC85 /* StatusBarViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C486871B62653C0065DC85 /* StatusBarViewTests.m */; };
-		10C486931B6266F80065DC85 /* StatusMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C486921B6266F80065DC85 /* StatusMessage.m */; };
+		10C486931B6266F80065DC85 /* StatusMessageHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C486921B6266F80065DC85 /* StatusMessageHandle.m */; };
 		10C486971B6271540065DC85 /* MessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C486961B6271540065DC85 /* MessageView.m */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +42,8 @@
 		10C486811B62653C0065DC85 /* StatusBarViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusBarViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C486861B62653C0065DC85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10C486871B62653C0065DC85 /* StatusBarViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StatusBarViewTests.m; sourceTree = "<group>"; };
-		10C486911B6266F80065DC85 /* StatusMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMessage.h; sourceTree = "<group>"; };
-		10C486921B6266F80065DC85 /* StatusMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusMessage.m; sourceTree = "<group>"; };
+		10C486911B6266F80065DC85 /* StatusMessageHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMessageHandle.h; sourceTree = "<group>"; };
+		10C486921B6266F80065DC85 /* StatusMessageHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusMessageHandle.m; sourceTree = "<group>"; };
 		10C486941B626E3F0065DC85 /* StatusMessageProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusMessageProtocol.h; sourceTree = "<group>"; };
 		10C486951B6271540065DC85 /* MessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageView.h; sourceTree = "<group>"; };
 		10C486961B6271540065DC85 /* MessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageView.m; sourceTree = "<group>"; };
@@ -132,8 +132,8 @@
 		10C486981B6279190065DC85 /* StatusMessage */ = {
 			isa = PBXGroup;
 			children = (
-				10C486911B6266F80065DC85 /* StatusMessage.h */,
-				10C486921B6266F80065DC85 /* StatusMessage.m */,
+				10C486911B6266F80065DC85 /* StatusMessageHandle.h */,
+				10C486921B6266F80065DC85 /* StatusMessageHandle.m */,
 				10C486941B626E3F0065DC85 /* StatusMessageProtocol.h */,
 			);
 			name = StatusMessage;
@@ -243,7 +243,7 @@
 				10C486971B6271540065DC85 /* MessageView.m in Sources */,
 				10C486711B62653C0065DC85 /* AppDelegate.m in Sources */,
 				10C4866E1B62653C0065DC85 /* main.m in Sources */,
-				10C486931B6266F80065DC85 /* StatusMessage.m in Sources */,
+				10C486931B6266F80065DC85 /* StatusMessageHandle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +440,7 @@
 				10C4868D1B62653C0065DC85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10C4868E1B62653C0065DC85 /* Build configuration list for PBXNativeTarget "StatusBarViewTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +449,7 @@
 				10C486901B62653C0065DC85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

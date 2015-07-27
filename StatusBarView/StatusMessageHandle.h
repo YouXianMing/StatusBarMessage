@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "StatusMessageProtocol.h"
 
-@interface StatusMessage : UIView
+@interface StatusMessageHandle : NSObject
 
 /**
  *  显示加载的view

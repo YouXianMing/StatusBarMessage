@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "StatusMessage.h"
+#import "StatusMessageHandle.h"
 #import "MessageView.h"
 
 @interface ViewController ()
@@ -27,9 +27,9 @@
 
 - (void)showMessageEvent {
 
-    [StatusMessage showAndHideDuration:2.f];
-    [StatusMessage showWithView:[MessageView messageViewWithTitle:@"YouXianMing" backgroundColor:[UIColor whiteColor]]
-               hideAfterSeconds:3.f];
+    [StatusMessageHandle showAndHideDuration:2.f];
+    [StatusMessageHandle showWithView:[MessageView messageViewWithTitle:@"YouXianMing" backgroundColor:[UIColor whiteColor]]
+                     hideAfterSeconds:3.f];
 }
 
 @end

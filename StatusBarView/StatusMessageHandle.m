@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 YouXianMing. All rights reserved.
 //
 
-#import "StatusMessage.h"
+#import "StatusMessageHandle.h"
 
 #define  Status_Message  @"StatusMessage"
 
@@ -14,11 +14,11 @@ static UIWindow        *_statusWindow      = nil;
 static NSMapTable      *_weakDictionary    = nil;
 static NSTimeInterval   _animationDuration = 1.f;
 
-@implementation StatusMessage
+@implementation StatusMessageHandle
 
 + (void)initialize {
     
-    if (self == [StatusMessage class]) {
+    if (self == [StatusMessageHandle class]) {
 
         _weakDictionary = [NSMapTable strongToWeakObjectsMapTable];
         
