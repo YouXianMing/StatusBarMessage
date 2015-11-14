@@ -20,12 +20,16 @@ static NSTimeInterval   _animationDuration = 1.f;
     
     if (self == [StatusMessageHandle class]) {
 
+        UIWindow *currentKeyWindow = [UIApplication sharedApplication].keyWindow;
+
         _weakDictionary = [NSMapTable strongToWeakObjectsMapTable];
         
         _statusWindow                        = [[UIWindow alloc] initWithFrame:STATUS_BAR_FRAME];
         _statusWindow.windowLevel            = UIWindowLevelStatusBar + 1;
         _statusWindow.userInteractionEnabled = NO;
         [_statusWindow makeKeyAndVisible];
+        
+        [currentKeyWindow makeKeyAndVisible];
     }
 }
 
@@ -47,7 +51,7 @@ static NSTimeInterval   _animationDuration = 1.f;
     _animationDuration = duration;
 }
 
-+ (void)showWithView:(UIView<StatusMessageProtocol> *)view hideAfterSeconds:(NSTimeInterval)seconds {
++ (void)showWithView:(UIView <StatusMessageProtocol> *)view hideAfterSeconds:(NSTimeInterval)seconds {
 
     [_weakDictionary setObject:view forKey:Status_Message];
     [_statusWindow addSubview:view];

@@ -42,6 +42,6 @@
  *  @param view    实现了StatusMessageProtocol的view
  *  @param seconds 延时几秒后隐藏
  */
-+ (void)showWithView:(UIView<StatusMessageProtocol> *)view hideAfterSeconds:(NSTimeInterval)seconds;
++ (void)showWithView:(UIView <StatusMessageProtocol> *)view hideAfterSeconds:(NSTimeInterval)seconds;
 
 @end
